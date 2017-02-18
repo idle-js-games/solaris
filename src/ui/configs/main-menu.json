@@ -1,0 +1,69 @@
+{
+  "id": "mainMenu",
+  "type": "menu",
+  "components": [
+    {
+      "id": "button1",
+      "type": "button",
+      "x": "0",
+      "y": "0",
+      "asset": "button",
+      "height": "50",
+      "width": "300",
+			"anchorX": "0.5",
+			"anchorY": "0.5",
+      "label": {
+      	"text": "Start",
+				"style": {
+					"font": "24px Muli",
+					"fill": "white",
+					"align": "center"
+				},
+				"anchorX": "0.5",
+				"anchorY": "0.5"
+      }
+    },
+    {
+      "id": "button2",
+      "type": "button",
+      "x": "0",
+      "y": "75",
+      "asset": "button",
+      "height": "50",
+      "width": "300",
+			"anchorX": "0.5",
+			"anchorY": "0.5",
+      "label": {
+      	"text": "About",
+				"style": {
+					"font": "24px Muli",
+					"fill": "white",
+					"align": "center"
+				},
+				"anchorX": "0.5",
+				"anchorY": "0.5"
+      }
+    },
+    {
+      "id": "button3",
+      "type": "button",
+      "x": "0",
+      "y": "150",
+      "asset": "button",
+      "height": "50",
+      "width": "300",
+			"anchorX": "0.5",
+			"anchorY": "0.5",
+      "label": {
+      	"text": "Quit",
+				"style": {
+					"font": "24px Muli",
+					"fill": "white",
+					"align": "center"
+				},
+				"anchorX": "0.5",
+				"anchorY": "0.5"
+      }
+    }
+  ]
+}
