@@ -1,26 +1,18 @@
 /* globals __DEV__ */
 import Phaser from 'phaser'
-import Mushroom from '../sprites/Mushroom'
+
+let game
 
 export default class Game extends Phaser.State {
+  preload () {
+    game = this.game
+    this.bg = game.add.tileSprite(0, 0, 1280, 720, 'bg')
+    this.logo = game.add.sprite(5, 5, 'logo-white')
+    this.logo.scale.setTo(0.2)
+    this.logo.smoothed = true
+  }
+
   create () {
-    const bannerText = 'GAME SCREEN'
-    let banner = this.add.text(this.world.centerX, this.game.height - 80, bannerText)
-    banner.font = 'Muli'
-    banner.padding.set(10, 16)
-    banner.fontSize = 40
-    banner.fill = '#263238'
-    banner.smoothed = false
-    banner.anchor.setTo(0.5)
-
-    this.mushroom = new Mushroom({
-      game: this,
-      x: this.world.centerX,
-      y: this.world.centerY,
-      asset: 'button'
-    })
-
-    this.game.add.existing(this.mushroom)
     this.game.time.advancedTiming = true
   }
 

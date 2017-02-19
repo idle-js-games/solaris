@@ -2,14 +2,14 @@
 import Phaser from 'phaser'
 import Button from '../ui/buttons/Button'
 
-let bg
 let game
+let bg
 
 export default class MainMenu extends Phaser.State {
 
   preload () {
     game = this.game
-    this.load.json('menuConfig', './src/ui/configs/main-menu.json')
+    this.load.json('menuConfig', './resources/configs/mainMenu.json')
     bg = game.add.tileSprite(0, 0, 1280, 720, 'bg')
     let logo = game.add.sprite(game.world.centerX - 231, game.world.centerY - 290, 'logo-white')
     logo.scale.setTo(0.75)
@@ -49,7 +49,7 @@ export default class MainMenu extends Phaser.State {
     menuPanel.x = game.world.centerX
     menuPanel.y = game.world.centerY + 20
 
-    const info = new Phaser.Text(game, game.world.centerX, game.world.centerY + 340, '(Version 0.0.1a)', {
+    const info = new Phaser.Text(game, game.world.centerX, game.world.centerY + 340, 'Version 0.0.1a', {
       font: '14px Muli',
       fill: 'white',
       align: 'center'

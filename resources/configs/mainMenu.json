@@ -1,6 +1,5 @@
 {
   "id": "mainMenu",
-  "type": "menu",
   "components": [{
     "id": "button1",
     "type": "button",
@@ -13,7 +12,7 @@
     "anchorY": "0.5",
     "link": "Game",
     "label": {
-      "text": "Start",
+      "text": "Play",
       "style": {
         "font": "24px Muli",
         "fill": "white",

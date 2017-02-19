@@ -1,0 +1,26 @@
+{ 
+    "game": [
+        {
+            "type": "image",
+            "key": "bg",
+            "url": "resources/images/bg.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "key": "logo-white",
+            "url": "resources/images/logo-white.png",
+            "overwrite": false
+        },
+        {
+            "type": "spritesheet",
+            "key": "button",
+            "url": "resources/images/button.png",
+            "frameWidth": 500,
+            "frameHeight": 250,
+            "frameMax": 3,
+            "margin": 0,
+            "spacing": 0
+        }
+    ]
+}
