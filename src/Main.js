@@ -10,7 +10,6 @@ import MainMenuState from './states/MainMenu'
 import Config from './Config'
 
 class Game extends Phaser.Game {
-
   constructor () {
     const docElement = document.documentElement
     const width = docElement.clientWidth > Config.gameWidth ? Config.gameWidth : docElement.clientWidth

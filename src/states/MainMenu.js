@@ -1,22 +1,25 @@
+/* globals __DEV__ */
 import Phaser from 'phaser'
 import Button from '../ui/buttons/Button'
 
 let bg
+let game
 
 export default class MainMenu extends Phaser.State {
 
   preload () {
+    game = this.game
     this.load.json('menuConfig', './src/ui/configs/main-menu.json')
-    bg = this.game.add.tileSprite(0, 0, 1280, 720, 'bg')
-    let logo = this.game.add.sprite(this.game.world.centerX - 231, this.game.world.centerY - 290, 'logo-white')
+    bg = game.add.tileSprite(0, 0, 1280, 720, 'bg')
+    let logo = game.add.sprite(game.world.centerX - 231, game.world.centerY - 290, 'logo-white')
     logo.scale.setTo(0.75)
   }
 
   create () {
     let button = new Button()
-    let menuPanel = this.game.add.group()
+    let menuPanel = game.add.group()
 
-    const menuConfig = this.game.cache.getJSON('menuConfig')
+    const menuConfig = game.cache.getJSON('menuConfig')
     menuConfig.components.forEach((component) => {
       let menuItem = button.createButton({
         game: game,
@@ -43,19 +46,26 @@ export default class MainMenu extends Phaser.State {
       menuPanel.add(menuItem)
     })
 
-    menuPanel.x = this.game.world.centerX
-    menuPanel.y = this.game.world.centerY + 20
+    menuPanel.x = game.world.centerX
+    menuPanel.y = game.world.centerY + 20
 
-    const info = new Phaser.Text(this.game, this.game.world.centerX, this.game.world.centerY + 340, '(Version 0.0.1a)', {
+    const info = new Phaser.Text(game, game.world.centerX, game.world.centerY + 340, '(Version 0.0.1a)', {
       font: '14px Muli',
       fill: 'white',
       align: 'center'
     })
     info.anchor.setTo(0.5)
-    this.game.add.existing(info)
+    game.add.existing(info)
+    game.time.advancedTiming = true
   }
 
   update () {
     bg.tilePosition.x += 0.25
+  }
+
+  render () {
+    if (__DEV__) {
+      game.debug.text(game.time.fps || '--', 2, 14, '#00ff00')
+    }
   }
 }

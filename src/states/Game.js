@@ -21,6 +21,7 @@ export default class Game extends Phaser.State {
     })
 
     this.game.add.existing(this.mushroom)
+    this.game.time.advancedTiming = true
   }
 
   render () {
