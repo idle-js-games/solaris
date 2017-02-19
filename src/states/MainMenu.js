@@ -10,7 +10,7 @@ export default class MainMenu extends Phaser.State {
     let button = new Button()
     let menuPanel = this.game.add.group()
 
-    const title = new Phaser.Text(this.game, this.game.world.centerX, this.game.world.centerY - 200, 'Galactic X', {
+    const title = new Phaser.Text(this.game, this.game.world.centerX, this.game.world.centerY - 200, 'Solaris', {
       font: '92px Muli',
       fill: 'white',
       align: 'center'

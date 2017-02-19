@@ -1,2 +1,2 @@
-# galactic-x
-Incremental/Idle Sci-Fi Game
+# Solaris
+Incremental Sci-Fi Game
