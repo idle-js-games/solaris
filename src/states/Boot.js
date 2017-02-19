@@ -3,7 +3,6 @@ import WebFont from 'webfontloader'
 
 export default class Boot extends Phaser.State {
   init () {
-    this.stage.backgroundColor = '#222126'
     this.fontsReady = false
     this.fontsLoaded = this.fontsLoaded.bind(this)
   }
@@ -11,7 +10,7 @@ export default class Boot extends Phaser.State {
   preload () {
     WebFont.load({
       google: {
-        families: ['Muli']
+        families: ['Muli', 'Montserrat:300']
       },
       active: this.fontsLoaded
     })

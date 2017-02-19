@@ -20,7 +20,7 @@
         "align": "center"
       },
       "anchorX": "0.5",
-      "anchorY": "0.48"
+      "anchorY": "0.47"
     }
   }, {
     "id": "button2",
@@ -41,7 +41,7 @@
         "align": "center"
       },
       "anchorX": "0.5",
-      "anchorY": "0.48"
+      "anchorY": "0.47"
     }
   }, {
     "id": "button3",
@@ -62,7 +62,7 @@
         "align": "center"
       },
       "anchorX": "0.5",
-      "anchorY": "0.48"
+      "anchorY": "0.47"
     }
   }]
 }

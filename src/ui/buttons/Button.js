@@ -25,22 +25,16 @@ export default class Button {
       textAnchorY: textAnchorY
     })
 
-    console.log(buttonBase)
-
     buttonBase.onInputOver.add(() => {
-      console.log('onInputOver')
     })
 
     buttonBase.onInputOut.add(() => {
-      console.log('onInputOut')
     })
 
     buttonBase.onInputDown.add(() => {
-      console.log('onInputDown')
     })
 
     buttonBase.onInputUp.add(() => {
-      console.log('onInputUp')
     })
 
     button.add(buttonBase)
