@@ -10,8 +10,8 @@ export default class MainMenu extends Phaser.State {
     let button = new Button()
     let menuPanel = this.game.add.group()
 
-    const title = new Phaser.Text(this.game, this.game.world.centerX, this.game.world.centerY - 200, 'Main Menu', {
-      font: '64px Muli',
+    const title = new Phaser.Text(this.game, this.game.world.centerX, this.game.world.centerY - 200, 'Galactic X', {
+      font: '92px Muli',
       fill: 'white',
       align: 'center'
     })
@@ -20,33 +20,35 @@ export default class MainMenu extends Phaser.State {
 
     const menuConfig = this.game.cache.getJSON('menuConfig')
     menuConfig.components.forEach((component) => {
-      menuPanel.add(
-        button.createButton({
-          game: game,
-          x: component.x,
-          y: component.y,
-          height: component.height,
-          width: component.width,
-          anchorX: component.anchorX,
-          anchorY: component.anchorY,
-          text: component.label.text,
-          style: {
-            font: component.label.style.font,
-            fill: component.label.style.fill,
-            align: component.label.style.align
-          },
-          textAnchorX: component.label.anchorX,
-          textAnchorY: component.label.anchorY
-        })
-      )
+      let menuItem = button.createButton({
+        game: game,
+        x: component.x,
+        y: component.y,
+        asset: component.asset,
+        callback: () => {
+          this.state.start(component.link)
+        },
+        height: component.height,
+        width: component.width,
+        anchorX: component.anchorX,
+        anchorY: component.anchorY,
+        text: component.label.text,
+        style: {
+          font: component.label.style.font,
+          fill: component.label.style.fill,
+          align: component.label.style.align
+        },
+        textAnchorX: component.label.anchorX,
+        textAnchorY: component.label.anchorY
+      })
+
+      menuPanel.add(menuItem)
     })
 
     menuPanel.x = this.game.world.centerX
     menuPanel.y = this.game.world.centerY
 
-    console.log(menuPanel)
-
-    const info = new Phaser.Text(this.game, this.game.world.centerX, this.game.world.centerY + 340, '(Game - v0.0.1)', {
+    const info = new Phaser.Text(this.game, this.game.world.centerX, this.game.world.centerY + 340, '(Version 0.0.1a)', {
       font: '14px Muli',
       fill: 'white',
       align: 'center'

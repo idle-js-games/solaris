@@ -4,7 +4,7 @@ import Mushroom from '../sprites/Mushroom'
 
 export default class Game extends Phaser.State {
   create () {
-    const bannerText = 'GALACTIC / FEDERATION'
+    const bannerText = 'GAME SCREEN'
     let banner = this.add.text(this.world.centerX, this.game.height - 80, bannerText)
     banner.font = 'Muli'
     banner.padding.set(10, 16)
