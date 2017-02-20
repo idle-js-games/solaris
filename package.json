@@ -6,8 +6,8 @@
   "main": "index.js",
   "scripts": {
     "watch": "webpack --config webpack.config.js",
-    "build": "webpack --config webpack.production.config.js",
-    "test": "standard"
+    "build": "",
+    "test": ""
   },
   "license": "MIT",
   "devDependencies": {
