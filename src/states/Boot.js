@@ -16,6 +16,7 @@ export default class Boot extends Phaser.State {
   }
 
   create () {
+    this.game.renderer.renderSession.roundPixels = true
     this.game.load.onFileComplete.add(this.fileComplete, this)
     this.game.load.onLoadComplete.add(this.assetsLoaded, this)
   }

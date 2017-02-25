@@ -13,7 +13,7 @@ class Game extends Phaser.Game {
     const docElement = document.documentElement
     const width = docElement.clientWidth > Config.gameWidth ? Config.gameWidth : docElement.clientWidth
     const height = docElement.clientHeight > Config.gameHeight ? Config.gameHeight : docElement.clientHeight
-    super(width, height, Phaser.CANVAS, 'content', null)
+    super(width, height, Phaser.AUTO, 'content', null)
 
     this.state.add('Boot', BootState, false)
     this.state.add('MainMenu', MainMenuState, false)

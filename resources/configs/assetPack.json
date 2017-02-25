@@ -8,6 +8,18 @@
         },
         {
             "type": "image",
+            "key": "stars",
+            "url": "resources/images/stars.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "key": "game",
+            "url": "resources/images/game-ui-v1.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
             "key": "logo-white",
             "url": "resources/images/logo-white.png",
             "overwrite": false
@@ -16,7 +28,7 @@
             "type": "spritesheet",
             "key": "button",
             "url": "resources/images/button.png",
-            "frameWidth": 500,
+            "frameWidth": 10,
             "frameHeight": 250,
             "frameMax": 3,
             "margin": 0,

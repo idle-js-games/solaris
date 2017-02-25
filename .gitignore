@@ -38,3 +38,4 @@ dist
 
 # Optional REPL history
 .node_repl_history
+resources/images/src/

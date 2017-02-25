@@ -1,0 +1,109 @@
+{
+  "id": "gameMenu",
+  "components": [{
+    "id": "button1",
+    "type": "button",
+    "x": "0",
+    "y": "0",
+    "asset": "button",
+    "height": "75",
+    "width": "243",
+    "anchorX": "0.5",
+    "anchorY": "0.5",
+    "link": "Game",
+    "label": {
+      "text": "Star Map",
+      "style": {
+        "font": "24px Muli",
+        "fill": "white",
+        "align": "center"
+      },
+      "anchorX": "0.5",
+      "anchorY": "0.47"
+    }
+  }, {
+    "id": "button2",
+    "type": "button",
+    "x": "253",
+    "y": "0",
+    "asset": "button",
+    "height": "75",
+    "width": "243",
+    "anchorX": "0.5",
+    "anchorY": "0.5",
+    "link": "About",
+    "label": {
+      "text": "Inventory",
+      "style": {
+        "font": "24px Muli",
+        "fill": "white",
+        "align": "center"
+      },
+      "anchorX": "0.5",
+      "anchorY": "0.47"
+    }
+  }, {
+    "id": "button3",
+    "type": "button",
+    "x": "506",
+    "y": "0",
+    "asset": "button",
+    "height": "75",
+    "width": "243",
+    "anchorX": "0.5",
+    "anchorY": "0.5",
+    "link": "Options",
+    "label": {
+      "text": "Upgrades",
+      "style": {
+        "font": "24px Muli",
+        "fill": "white",
+        "align": "center"
+      },
+      "anchorX": "0.5",
+      "anchorY": "0.47"
+    }
+  }, {
+    "id": "button4",
+    "type": "button",
+    "x": "759",
+    "y": "0",
+    "asset": "button",
+    "height": "75",
+    "width": "243",
+    "anchorX": "0.5",
+    "anchorY": "0.5",
+    "link": "Options",
+    "label": {
+      "text": "Trading",
+      "style": {
+        "font": "24px Muli",
+        "fill": "white",
+        "align": "center"
+      },
+      "anchorX": "0.5",
+      "anchorY": "0.47"
+    }
+  }, {
+    "id": "button5",
+    "type": "button",
+    "x": "1012",
+    "y": "0",
+    "asset": "button",
+    "height": "75",
+    "width": "243",
+    "anchorX": "0.5",
+    "anchorY": "0.5",
+    "link": "Options",
+    "label": {
+      "text": "Decoder",
+      "style": {
+        "font": "24px Muli",
+        "fill": "white",
+        "align": "center"
+      },
+      "anchorX": "0.5",
+      "anchorY": "0.47"
+    }
+  }]
+}

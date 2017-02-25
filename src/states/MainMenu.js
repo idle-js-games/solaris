@@ -3,15 +3,17 @@ import Phaser from 'phaser'
 import Button from '../ui/buttons/Button'
 
 let game
-let bg
+let stars
 
 export default class MainMenu extends Phaser.State {
 
   preload () {
     game = this.game
     this.load.json('menuConfig', './resources/configs/mainMenu.json')
-    bg = game.add.tileSprite(0, 0, 1280, 720, 'bg')
-    let logo = game.add.sprite(game.world.centerX - 231, game.world.centerY - 290, 'logo-white')
+    this.bg = game.add.tileSprite(0, 0, 1280, 720, 'bg')
+    stars = game.add.tileSprite(0, 0, 1280, 720, 'stars')
+    stars.alpha = 0.2
+    let logo = game.add.sprite(game.world.centerX - 285, game.world.centerY - 232, 'logo-white')
     logo.scale.setTo(0.75)
   }
 
@@ -60,7 +62,7 @@ export default class MainMenu extends Phaser.State {
   }
 
   update () {
-    bg.tilePosition.x += 0.25
+    stars.tilePosition.x += 0.25
   }
 
   render () {
