@@ -9,8 +9,8 @@ export default class Game extends Phaser.State {
   preload () {
     game = this.game
     this.load.json('gameConfig', './resources/configs/game.json')
-    this.bg = game.add.tileSprite(0, 0, 1280, 720, 'bg')
-    stars = game.add.tileSprite(0, 0, 1280, 720, 'stars')
+    this.bg = game.add.tileSprite(0, 0, 1600, 900, 'bg')
+    stars = game.add.tileSprite(0, 0, 1600, 900, 'stars')
     stars.alpha = 0.2
   }
 
@@ -45,8 +45,8 @@ export default class Game extends Phaser.State {
       menuPanel.add(menuItem)
     })
 
-    menuPanel.x = 134
-    menuPanel.y = 47.5
+    menuPanel.x = 112.5
+    menuPanel.y = 35
     this.game.time.advancedTiming = true
   }
 

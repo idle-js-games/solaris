@@ -11,7 +11,7 @@ export default class Boot extends Phaser.State {
   }
 
   preload () {
-    this.game.stage.backgroundColor = '#09172A'
+    this.game.stage.backgroundColor = '#0F2A48'
     this.loadFonts()
   }
 
@@ -25,6 +25,10 @@ export default class Boot extends Phaser.State {
     WebFont.load({
       google: {
         families: ['Muli', 'Montserrat:300']
+      },
+      custom: {
+        families: ['FontAwesome'],
+        urls: ['https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css']
       },
       active: this.fontsLoaded
     })

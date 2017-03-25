@@ -10,10 +10,10 @@ export default class MainMenu extends Phaser.State {
   preload () {
     game = this.game
     this.load.json('menuConfig', './resources/configs/mainMenu.json')
-    this.bg = game.add.tileSprite(0, 0, 1280, 720, 'bg')
-    stars = game.add.tileSprite(0, 0, 1280, 720, 'stars')
+    this.bg = game.add.tileSprite(0, 0, 1600, 900, 'bg')
+    stars = game.add.tileSprite(0, 0, 1600, 900, 'stars')
     stars.alpha = 0.2
-    let logo = game.add.sprite(game.world.centerX - 285, game.world.centerY - 232, 'logo-white')
+    let logo = game.add.sprite(game.world.centerX - 285, game.world.centerY - 270, 'logo-white')
     logo.scale.setTo(0.75)
   }
 
@@ -51,7 +51,7 @@ export default class MainMenu extends Phaser.State {
     menuPanel.x = game.world.centerX
     menuPanel.y = game.world.centerY + 20
 
-    const info = new Phaser.Text(game, game.world.centerX, game.world.centerY + 340, 'Version 0.0.1a', {
+    const info = new Phaser.Text(game, game.world.centerX, game.world.centerY + 425, 'Version 0.0.1a', {
       font: '14px Muli',
       fill: 'white',
       align: 'center'

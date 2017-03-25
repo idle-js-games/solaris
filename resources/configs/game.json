@@ -6,15 +6,15 @@
     "x": "0",
     "y": "0",
     "asset": "button",
-    "height": "75",
-    "width": "243",
+    "height": "45",
+    "width": "200",
     "anchorX": "0.5",
     "anchorY": "0.5",
     "link": "Game",
     "label": {
-      "text": "Star Map",
+      "text": "\uf135 Star Map",
       "style": {
-        "font": "24px Muli",
+        "font": "24px Muli, FontAwesome",
         "fill": "white",
         "align": "center"
       },
@@ -24,18 +24,18 @@
   }, {
     "id": "button2",
     "type": "button",
-    "x": "253",
+    "x": "210",
     "y": "0",
     "asset": "button",
-    "height": "75",
-    "width": "243",
+    "height": "45",
+    "width": "200",
     "anchorX": "0.5",
     "anchorY": "0.5",
     "link": "About",
     "label": {
-      "text": "Inventory",
+      "text": "\uf1b3 Inventory",
       "style": {
-        "font": "24px Muli",
+        "font": "24px Muli, FontAwesome",
         "fill": "white",
         "align": "center"
       },
@@ -45,18 +45,18 @@
   }, {
     "id": "button3",
     "type": "button",
-    "x": "506",
+    "x": "420",
     "y": "0",
     "asset": "button",
-    "height": "75",
-    "width": "243",
+    "height": "45",
+    "width": "200",
     "anchorX": "0.5",
     "anchorY": "0.5",
     "link": "Options",
     "label": {
-      "text": "Upgrades",
+      "text": "\uf148 Upgrades",
       "style": {
-        "font": "24px Muli",
+        "font": "24px Muli, FontAwesome",
         "fill": "white",
         "align": "center"
       },
@@ -66,18 +66,18 @@
   }, {
     "id": "button4",
     "type": "button",
-    "x": "759",
+    "x": "630",
     "y": "0",
     "asset": "button",
-    "height": "75",
-    "width": "243",
+    "height": "45",
+    "width": "200",
     "anchorX": "0.5",
     "anchorY": "0.5",
     "link": "Options",
     "label": {
-      "text": "Trading",
+      "text": "\uf0ec Trade",
       "style": {
-        "font": "24px Muli",
+        "font": "24px Muli, FontAwesome",
         "fill": "white",
         "align": "center"
       },
@@ -87,23 +87,65 @@
   }, {
     "id": "button5",
     "type": "button",
-    "x": "1012",
+    "x": "840",
     "y": "0",
     "asset": "button",
-    "height": "75",
-    "width": "243",
+    "height": "45",
+    "width": "200",
     "anchorX": "0.5",
     "anchorY": "0.5",
     "link": "Options",
     "label": {
-      "text": "Decoder",
+      "text": "\uf1b2 Decrypt",
       "style": {
-        "font": "24px Muli",
+        "font": "24px Muli, FontAwesome",
         "fill": "white",
         "align": "center"
       },
       "anchorX": "0.5",
       "anchorY": "0.47"
+    }
+  }, {
+    "id": "button5",
+    "type": "button",
+    "x": "1397",
+    "y": "0",
+    "asset": "button",
+    "height": "45",
+    "width": "45",
+    "anchorX": "0.5",
+    "anchorY": "0.5",
+    "link": "Options",
+    "label": {
+      "text": "\uf013 ",
+      "style": {
+        "font": "24px FontAwesome",
+        "fill": "white",
+        "align": "center"
+      },
+      "anchorX": "0.37",
+      "anchorY": "0.4"
+    }
+  }, {
+    "id": "button5",
+    "type": "button",
+    "x": "1452",
+    "y": "0",
+    "asset": "button",
+    "height": "45",
+    "width": "45",
+    "anchorX": "0.5",
+    "anchorY": "0.5",
+    "link": "MainMenu",
+    "label": {
+      "text": "\uf08b ",
+      "style": {
+        "font": "24px FontAwesome",
+        "fill": "white",
+        "align": "center"
+      },
+      "anchorX": "0.35",
+      "anchorY": "0.4"
     }
   }]
 }
